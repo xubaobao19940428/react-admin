@@ -6,13 +6,22 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.0.4",
+    "axios": "^0.19.2",
+    "js-cookie": "^2.2.1",
+    "node-sass": "^4.14.0",
+    "parse": "^2.13.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router": "^5.1.2",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "node build/build.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -30,5 +39,34 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "autoprefixer": "^9.7.6",
+    "babel-loader": "^8.1.0",
+    "chalk": "^4.0.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "compression-webpack-plugin": "^3.1.0",
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.0.0-alpha.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "ora": "^4.0.4",
+    "postcss": "^7.0.27",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "svg-sprite-loader": "^4.2.7",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.42.0",
+    "webpack-bundle-analyzer": "^3.7.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2"
   }
 }
